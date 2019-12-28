@@ -5,7 +5,7 @@ dotenv.config();
 
 // initialize aylien
 
-var aylien = require('aylien_textapi');
+let AYLIENTextAPI = require('aylien_textapi');
 var textapi = new AYLIENTextAPI({
     application_id: process.env.API_ID,
     application_key: process.env.API_KEY
@@ -27,8 +27,8 @@ app.get('/', function(req, res) {
 })
 
 // designates what port the app will listen to for incoming requests
-app.listen(8080, function() {
-    console.log('Example app listening on port 8080!')
+app.listen(8000, function() {
+    console.log('Example app listening on port 8000!')
 })
 
 app.get('/test', function(req, res) {
