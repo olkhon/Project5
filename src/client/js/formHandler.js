@@ -5,12 +5,18 @@ function handleSubmit(event) {
     let formText = document.getElementById('name').value
     Client.checkForName(formText)
 
+
+
     console.log("::: Form Submitted :::")
-    fetch('http://localhost:3000/test')
+    fetch('http://localhost:3000/aylien')
         .then(res => res.json())
         .then(function(res) {
             document.getElementById('results').innerHTML = res.message
         })
+
+
+
+
 }
 
 export { handleSubmit }

@@ -12,9 +12,12 @@ var textapi = new AYLIENTextAPI({
 });
 
 
+
+
 var path = require('path')
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
+const aylienAPIResponse = require('./aylienAPI.js')
 
 const app = express()
 
@@ -29,6 +32,10 @@ app.get('/', function(req, res) {
 
 app.get('/test', function(req, res) {
     res.send(mockAPIResponse)
+})
+
+app.get('/aylien', function(req, res) {
+    res.send(aylienAPIResponse)
 })
 
 // designates what port the app will listen to for incoming requests
