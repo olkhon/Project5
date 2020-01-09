@@ -1,3 +1,7 @@
+function sum(a, b) {
+    return a + b;
+}
+
 async function handleSubmit(event) {
     event.preventDefault()
 
@@ -28,4 +32,4 @@ async function postData(url = "", data = {}) {
 }
 
 
-export { handleSubmit }
+export { handleSubmit, sum }
