@@ -2,7 +2,7 @@ import {
     checkUrl
 } from './urlChecker.js'
 
-
+// sample function for tests
 function sum(a, b) {
     return a + b;
 }
@@ -14,6 +14,8 @@ async function handleSubmit(event) {
     let formText = document.getElementById("name").value
     const userInput = document.getElementById("results")
 
+
+    // if response from urlChecker was negative give user response in results field
     if (checkUrl(formText) === false) {
         userInput.textContent = "Please provide a valid URL!";
         return;
