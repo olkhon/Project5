@@ -24,7 +24,7 @@ async function handleSubmit(event) {
     }
 
     const res = await postData("/sentiment", dataInput);
-    userInput.textContent = `Textpolarity is ${res.msg1} and Textpolarityconfidence is  ${res.msg2}`;
+    userInput.textContent = `Textpolarity is ${res.msg1} and Textpolarity-Confidence is  ${res.msg2}`;
 
 }
 
