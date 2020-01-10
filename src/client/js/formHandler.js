@@ -1,3 +1,8 @@
+import {
+    checkUrl
+} from './urlChecker.js'
+
+
 function sum(a, b) {
     return a + b;
 }
@@ -9,7 +14,10 @@ async function handleSubmit(event) {
     let formText = document.getElementById("name").value
     const userInput = document.getElementById("results")
 
-
+    if (checkUrl(formText) === false) {
+        userInput.textContent = "Please provide a valid URL!";
+        return;
+    }
 
     const dataInput = {
         url: formText
