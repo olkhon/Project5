@@ -10,10 +10,10 @@ test('adds 1 + 2 to equal 3', () => {
 });
 
 
-test("Is function defined", () => {
+test("Is function defined", async() => {
     expect(handleSubmit).toBeDefined();
 });
 
-test("Test if handleSubmit is a function", () => {
+test("Test if handleSubmit is a function", async() => {
     expect(typeof handleSubmit).toBe('function');
 });
