@@ -27,3 +27,19 @@ git clone -- git@github.com:[your-user-name]/webpack-express.git --
 - ```npm install```
 - ```npm start``` to start the app
 - this app runs on localhost:8080, but you can of course edit that in server.js
+
+
+# sentiment analyses to do
+# Webpack Settings
+# Sass added to project
+# install sdk package in project
+# set up instance for aylien plus example credentials
+# install dotenv package
+# initialize dotenv in server.js
+# change port from 8080 to 8000, port 8080 occupied by webpack
+# post function client side formHandler.js
+# post function for api call, aylien initialize, bode parser middleware
+# jest setup
+# url checker function
+# testfunctions formHandler, urlChecker
+# service workers
