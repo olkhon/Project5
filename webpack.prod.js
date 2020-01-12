@@ -25,8 +25,7 @@ module.exports = {
             filename: "./index.html"
         }),
         new WorkboxPlugin.GenerateSW({
-            template: "./src/client/views/index.html",
-            filename: "./index.html"
+
         })
     ]
 }
