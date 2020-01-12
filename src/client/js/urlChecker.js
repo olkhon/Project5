@@ -1,7 +1,3 @@
-import {
-    handleSubmit
-} from './formHandler.js'
-
 function checkUrl(formText) {
 
     var validUrl = require('valid-url');
