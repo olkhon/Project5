@@ -25,7 +25,7 @@ async function handleSubmit(event) {
         url: formText
     }
 
-    const res = await postData("/sentiment", dataInput);
+    const res = await postData("http://localhost:3000/sentiment", dataInput);
     userInput.textContent = `Textpolarity is ${res.msg1} and Textpolarity-Confidence is  ${res.msg2}`;
 
 }
