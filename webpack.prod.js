@@ -11,7 +11,6 @@ module.exports = {
         libraryTarget: 'var',
         library: 'Client'
     },
-
     module: {
         rules: [{
                 test: '/\.js$/',
@@ -34,4 +33,3 @@ module.exports = {
         })
     ]
 }
-s
