@@ -5,6 +5,7 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
 
 
 module.exports = {
+    mode: 'production',
     entry: './src/client/index.js',
 
     module: {
