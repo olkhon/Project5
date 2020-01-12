@@ -13,11 +13,11 @@ async function handleSubmit(event) {
     // check what text was put into the form field
     let formText = document.getElementById("name").value
     const userInput = document.getElementById("results")
-
+    const errMsgUrl = document.getElementById("errMsgUrl")
 
     // if response from urlChecker was negative give user response in results field
     if (checkUrl(formText) === false) {
-        userInput.textContent = "Please provide a valid URL!";
+        errMsgUrl.textContent = "Please provide a valid URL!";
         return;
     }
 
